@@ -1,0 +1,14 @@
+ <?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+	<title>januslinux RSS feed</title>
+	<link>https://januslinux.github.io/</link>
+	<description>Free web building tutorials</description>
+	<item>
+		<title>Hello, world!</title>
+		<description>This is the first RSS item on this channel!</description>
+	</item>
+</channel>
+
+</rss> 
