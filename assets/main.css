@@ -1,0 +1,107 @@
+@import 'https://fonts.googleapis.com/css?family=Lato';
+/* Main Parts of CSS */
+html, body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-family: "Lato", sans-serif;
+    color: #1f1f1f;
+    background: #fff;
+    text-align: center;
+}
+h1, h2, p, span {
+    padding: 0;
+    margin: 0;
+}
+p {
+    line-height: 1.25;
+}
+h3 {
+    margin: 1rem 0 0 0;
+}
+hr {
+    margin: 2rem;
+    color: #ccc;
+}
+
+.desc {
+    color: #5f5f5f;
+}
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 256px;
+    position: fixed;
+    height: 100%;
+    background: #2f2f2f;
+    color: #efefef;
+}
+.main {
+    position: relative;
+    margin: 0 0 0 256px;
+    padding: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .sidebar {
+        display: flex;
+        position: absolute;
+        height: 64px;
+        width: 100%;
+        top: 0;
+    }
+    .main {
+        margin: 60px 0 0 0;
+    }
+}
+
+/* Sidebar Stuff */
+.sidebartitle {
+    margin: 32px;
+    padding: 0;
+    font-size: 24px;
+    line-height: 1;
+}
+.sidebaroption {
+    text-align: left;
+    padding: 12px 16px;
+    font-size: 16px;
+    line-height: 1;
+}
+.selected {
+    background: #7d007d;
+}
+
+@media only screen and (max-width: 768px) {
+    .sidebartitle {
+        margin: 20px 32px;
+    }
+    .sidebaroption {
+        padding: 16px 32px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .bardropdown {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        width: inherit;
+        top: 64px;
+        background: #333;
+        height: 320px
+    }
+    .sidebar:hover .bardropdown {
+        display: block;
+    }
+}
+
+.newscard {
+    border-radius: 8px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2); 
+    margin: 2rem;
+    padding: 2rem;
+}
+.newstitle {
+    padding: 0; 
+    margin: 0;
+}
