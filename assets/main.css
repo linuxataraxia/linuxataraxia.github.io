@@ -69,7 +69,7 @@ hr {
     line-height: 1;
 }
 .selected {
-    background: #7d007d;
+    background: #7e7eff;
 }
 
 @media only screen and (max-width: 768px) {
