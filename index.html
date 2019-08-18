@@ -1,83 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Welcome to Ataraxia Linux</title>
-<meta charset="UTF-8">
+<meta charset="utf-8">
+<link rel="stylesheet" TYPE="text/css" HREF="style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="assets/main.css">
+<meta name="keywords" content="ataraxia, GNU, Linux, musl, musl-libc, compact, simple, fast, efficient, minimal, x86, arm, mips, m68k, risc-v, dpkg">
+<meta name="description" content="Simple and lightweight source-based multi-platform Linux distribution with musl libc and busybox.">
+<title>Ataraxia Linux</title>
 <body>
-    <div class="sidebar">
-        <div class="sidebartitle">
-            <span>Ataraxia Linux</span>
-        </div>
-        <div class="bardropdown">
-            <div class="sidebaroption selected" onclick="window.location = 'index.html'">
-                <span onclick="window.location = 'index.html'">Home</span>
-            </div>
-            <div class="sidebaroption" onclick="window.location = 'https://github.com/ataraxialinux/ataraxia/releases'">
-                <span onclick="window.location = 'https://github.com/ataraxialinux/ataraxia/releases'">Download</span>
-            </div>
-            <div class="sidebaroption" onclick="window.location = 'https://github.com/ataraxialinux/ataraxia'">
-                <span onclick="window.location = 'https://github.com/ataraxialinux/ataraxia'">Code</span>
-            </div>
-        </div>
-    </div>
-    <div class="main">
-        <h1>Welcome to Ataraxia Linux</h1>
-        <h2 class="desc">A fast and compact Linux distribution using musl libc</h2>
-        <h3>What is this?</h3>
-        <p>Ataraxia Linux is a fast and compact <a href="https://kernel.org">Linux</a> distribution which uses <a href="https://musl-libc.org">musl libc.</a> This is an independent distribution - it was made from scratch. It's goal is to be efficient, optimised and minimal. It uses it's own package manager, which is forked from "pkgutils", which came from <a href="https://crux.nu">CRUX.</a> Ataraxia Linux is a general purpose distribution, but it is mainly aimed towards advanced Linux users. Ataraxia Linux was compiled with a hardened toolchain for better security. Ataraxia Linux is a rolling distribution, allowing you to use the latest software. We have pretty good hardware support.</p>
-        <h3>How can I contact and help you with development?</h3>
-        <p>You can <a href="mailto:Ataraxia Linux@protonmail.ch">e-mail</a> us and give some suggestions or help us by contributing to this project on <a href="https://github.com/ataraxialinux/ataraxia">GitHub.</a> Also, you can submit Ataraxia on DistroWatch, just <a href="http://distrowatch.org/dwres.php?waitingdistro=444&amp;resource=links#new">click here.</a> We have a <a href="https://discord.gg/KrrkEEG">Discord Server.</a> To subscribe to our mailing lists, <a href="https://www.freelists.org/list/januslinux">click here.</a></p>
-        <h3>Financial support</h3>
-        <p>Ataraxia Linux is not a commercial company! We'll glad to receive your donations. We are using Ethereum cryptocurrency for that. </p>
-        <p>Ethereum Wallet: 0xe72931051e4adb1c79bbacad1e1427b2d4ed0d01</p>
-        <hr>
-        <div class="commitscard">
-            <h3 class="commitstitle">Latest Commits</h3>
-            <script src="https://voidlinux.org/assets/js/voidcommits.js"></script>
-            <div class="cont">
-                <div class="left">
-                    <script src="https://api.github.com/repos/ataraxialinux/ataraxia/commits?page=1&amp;per_page=10&amp;callback=voidcommits&amp;sha=master"></script>
-                </div>
-                <div class="right">
-                    <script src="https://api.github.com/repos/ataraxialinux/ataraxia/commits?page=2&amp;per_page=10&amp;callback=voidcommits&amp;sha=master"></script>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <h2>Latest News</h2>
-        <div class="newscard">
-            <h3 class="newstitle">"Snapshot on August 14 2019 available" - August 15, 2019</h3>
-            <p>We've released snapshot for x86_64 for now. This is interim release made to show what we've done in 3 months. <a href="https://github.com/ataraxialinux/ataraxia/releases/tag/190814" >Download and changelog</a></p>
-        </div>
-        <div class="newscard">
-            <h3 class="newstitle">"Snapshot on May 20 2019 available" - May 21, 2019</h3>
-            <p>We've released snapshot for PowerPC64 (Big-Endian and Little-Endian). This is interim release made to show what we've done in 2 months. <a href="https://github.com/ataraxialinux/ataraxia/releases/tag/190520" >Download and changelog</a></p>
-        </div>
-        <div class="newscard">
-            <h3 class="newstitle">"Switched to OpenRC" - May 19, 2019</h3>
-            <p>We glad to announce that we moved to OpenRC! We had issues with runit and initscripts. Also we added netifrc from Gentoo Linux.</p>
-        </div>
-        <div class="newscard">
-            <h3 class="newstitle">"januslinux is Ataraxia Linux" - April 4, 2019</h3>
-            <p>We have changed name to Ataraxia Linux.</p>
-        </div>
-        <div class="newscard">
-            <h3 class="newstitle">"januslinux is dead." - March 32, 2019</h3>
-            <p>januslinux is dead. Also Linux and BSD are dying too!</p>
-        </div>
-        <div class="newscard">
-            <h3 class="newstitle">"januslinux tech preview 1 was released" - March 27, 2019</h3>
-            <p>We pleased to announce that a new release has arrived! Changelog and downloads: https://github.com/ataraxialinux/ataraxia/releases/tag/tp1</p>
-        </div>
-        <div class="newscard">
-            <h3 class="newstitle">"Discord Server" - March 5, 2019</h3>
-            <p>We pleased to announce that we opened a Discord Server!</p>
-        </div>
-        <div class="newscard">
-            <h3 class="newstitle">"New package manager for januslinux" - Feb 8, 2019</h3>
-            <p>We pleased to announce that we have our brand new package manager called "ne"! <a href="https://github.com/Ataraxia Linux/ne">Click here for more information.</a></p>
-        </div>
-    </div>
+	<div>
+		 <img class="logo" src="logo.png" alt="Ataraxia Linux logo"> 
+	</div>
+	<div>
+		<nav>
+			<a href="/" title="Overview">Home</a>
+			<a href="https://github.com/ataraxialinux/ataraxia/releases" title="Download">Download</a>
+			<a href="https://github.com/ataraxialinux/ataraxia/wiki" title="Wiki">Wiki</a>
+			<a href="https://github.com/ataraxialinux/ataraxia/issues" title="Bugs">Bugs</a>
+			<a href="https://github.com/ataraxialinux/ataraxia" title="Code">Code</a>
+		</nav>
+	</div>
+	<hr>
+	<h2>Introduction</h2>
+	<p>Ataraxia Linux is an <b>independent</b> multi-platform general purpose operating system, based on <a href="https://www.kernel.org/">Linux kernel</a>, <a href="https://www.musl-libc.org/">musl libc</a> and <a href="https://busybox.net/">busybox</a>. Ataraxia Linux is aimed to be simple, compact and safe, because was founded on the KISS and could be used on desktop, servers and embedded devices. Ataraxia Linux is available for x86, ARM, MIPS, Motorola 68000 and RISC-V. It uses it's own package manager called &quot;<a href="https://github.com/ataraxialinux/ne">ne</a>&quot; which is used to be friendly wrapper for &quot;<a href="https://wiki.debian.org/Teams/Dpkg">dpkg</a>&quot; and compatible with <a href="https://crux.nu/">CRUX</a> Pkgfiles. Ataraxia Linux is oriented towards advanced Linux users, who know what they're doing.</p>
+	<p></p>
+	<p>If you want to get help or advice, please, check out our <a href="irc://irc.freenode.net/#ataraxialinux">IRC</a>, <a href="https://t.me/ataraxialinux">Telegram</a>, <a href="https://matrix.to/#/#ataraxialinux:matrix.org">Matrix</a> and <a href="https://discord.gg/KrrkEEG">Discord</a>.</p>
+	<p>Also, you can help us with finances. Check out our <a href="https://www.patreon.com/ataraxialinux">Patreon page</a>.</p>
+	<hr>
+	<h2>Latest News</h2>
+	<div>
+		<hr>
+		<p class="timestamp">2019-08-15</p>
+		<h3>Snapshot on August 14 2019 available</h3>
+		<p>We've released snapshot for x86_64 for now. This is interim release made to show what we've done in 3 months. <a href="https://github.com/ataraxialinux/ataraxia/releases/tag/190814" >Download and changelog</a></p>
+	</div>
+	<div>
+		<hr>
+		<p class="timestamp">2019-05-21</p>
+		<h3>Snapshot on May 20 2019 available</h3>
+		<p>We've released snapshot for PowerPC64 (Big-Endian and Little-Endian). This is interim release made to show what we've done in 2 months. <a href="https://github.com/ataraxialinux/ataraxia/releases/tag/190520" >Download and changelog</a></p>
+	</div>
+	<div>
+		<hr>
+		<p class="timestamp">2019-05-19</p>
+		<h3>Switched to OpenRC</h3>
+		<p>We glad to announce that we moved to OpenRC! We had issues with runit and initscripts. Also we added netifrc from Gentoo Linux.</p>
+	</div>
+	<div>
+		<hr>
+		<p class="timestamp">2019-04-04</p>
+		<h3>januslinux is Ataraxia Linux</h3>
+		<p>We have changed name to Ataraxia Linux.</p>
+	</div>
+	<div>
+		<hr>
+		<p class="timestamp">2019-03-27</p>
+		<h3>januslinux tech preview 1 was released</h3>
+		<p>We pleased to announce that a new release has arrived! Changelog and downloads: https://github.com/ataraxialinux/ataraxia/releases/tag/tp1</p>
+	</div>
+	<div>
+		<hr>
+		<p class="timestamp">2019-03-05</p>
+		<h3>Discord Server</h3>
+		<p>We pleased to announce that we opened a Discord Server!</p>
+	</div>
+	<div>
+		<hr>
+		<p class="timestamp">2019-02-08</p>
+		<h3>New package manager for januslinux</h3>
+		<p>We pleased to announce that we have our brand new package manager called "ne"! <a href="https://github.com/Ataraxia Linux/ne">Click here for more information.</a></p>
+	</div>
+	<hr>
+	<div class="footer">
+		<p>Copyright © 2016-2019 Ataraxia Linux</p>
+		<p>Linux&#174; is a registered trademark of Linus Torvalds</p>
+	</div>
 </body>
 </html>
