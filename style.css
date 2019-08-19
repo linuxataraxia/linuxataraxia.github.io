@@ -48,7 +48,9 @@ nav a:hover {
 }
 
 hr {
-	border-top: 1px dashed;
+	background: none;
+	border: none;
+	border-top: 1px dashed #aaa;
 	margin: 1em 0;
 }
 
