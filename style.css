@@ -1,4 +1,4 @@
-body{
+body {
 	margin: 2em auto;
 	max-width: 40em;
 	padding: 0;
@@ -86,7 +86,9 @@ hr {
 
 .footer {
 	position: static;
-	left: 0; bottom: 0; right: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
 	text-align: center;
 }
 
@@ -94,8 +96,8 @@ hr {
 	margin: 0 0 0.5em 0;
 }
 
-@media print{
-	body{
+@media print {
+	body {
 		max-width: none;
 	}
 }
