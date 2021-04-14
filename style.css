@@ -101,3 +101,21 @@ hr {
 		max-width: none;
 	}
 }
+
+.button-class {
+	background-color: #7d3e1f;
+	border: none;
+	color: white;
+	padding: 12px 30px;
+	cursor: pointer;
+	font-size: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.button-class:hover {
+	background-color: Black;
+}
